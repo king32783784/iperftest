@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<test type="ftp stablity"> 
+  <list> 
+    <info> 
+      <summary>This is a args list of ue stability test.</summary>  
+      <version>1.0</version>   
+      <date>2016-06-26</date> 
+      <comonlabel>log fhost fsshpw ftpuser ftppw downfile downpath ulfile uppath chost csshpw cport clientip iperfpath serverip serverpw size interval lsize</comonlabel>
+    </info>
+    <common>
+      <log>rate.csv</log>
+      <!--ftp test rate log-->
+    </common> 
+    <ftpserver>
+      <fhost>192.168.9.57</fhost>
+      <!--ftp server ip-->
+      <fsshpw>baicells</fsshpw>
+      <!--ftp server  root password--> 
+      <ftpuser>ftpuser</ftpuser>  
+      <!-- ftpuser name -->  
+      <ftppw>123</ftppw>  
+      <!--ftp password-->
+      <downfile>1G</downfile>
+      <downpath>F:/TMP/1G</downpath>
+      <!--ftp downfile -->
+      <ulfile>2G</ulfile>
+      <uppath>F:/TMP/2G</uppath>
+      <!--ftp upfile -->
+    </ftpserver>
+    <cell>
+      <chost>192.168.9.42</chost>
+      <!--cell ip-->
+      <csshpw>root123</csshpw>  
+      <!--cell ssh password-->  
+      <cport>27149</cport>  
+      <!--cell port-->
+    </cell> 
+    <client>
+      <clientip>192.168.100.103</clientip>
+      <!--Test control pc's ip -->
+      <iperfpath>iperf.exe</iperfpath>
+      <!--Control's iperf's path-->
+    </client>
+    <iperfserver>
+      <serverip>192.168.9.79</serverip>
+      <!--iperf server ip-->
+      <serverpw>baicells</serverpw>
+      <!--iperf server's root passwd-->
+    </iperfserver>
+    <iperf>
+      <size>1024m</size>
+      <!-- Peak bandwidth's file size-->
+      <interval>10</interval>
+      <!-- iperf -i-->
+      <lsize>4m</lsize>
+      <!-- Irrigation Bag test' file size-->
+    </iperf>
+  </list> 
+</test>

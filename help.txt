@@ -1,0 +1,31 @@
+python performance.py -h 
+显示帮助信息
+
+常用测试命令组合：
+
+1.上下行峰值吞吐率-20MHz信道带宽(SA2,SSP7)
+TCP上行：python performance.py -u U -b 20MHz -s 2 -p 7
+TCP下行：python performance.py  -b 20MHz -s 2 -p 7
+UDP上行：python performance.py -m UDP -u U -b 20MHz -s 2 -p 7
+UDP下行：python performance.py -m UDP  -b 20MHz -s 2 -p 7
+2.上下行峰值吞吐率-20MHz信道带宽(SA1,SSP7)
+TCP上行：python performance.py -u U -b 20MHz -s 1 -p 7
+TCP下行：python performance.py  -b 20MHz -s 1 -p 7
+UDP上行：python performance.py -m UDP -u U -b 20MHz -s 1 -p 7
+UDP下行：python performance.py -m UDP  -b 20MHz -s 1 -p 7
+3.上下行峰值吞吐率-10MHz信道带宽(SA2,SSP7)
+TCP上行：python performance.py -u U -b 10MHz -s 2 -p 7
+TCP下行：python performance.py  -b 10MHz -s 2 -p 7
+UDP上行：python performance.py -m UDP -u U -b 10MHz -s 2 -p 7
+UDP下行：python performance.py -m UDP  -b 10MHz -s 2 -p 7
+4.上下行峰值吞吐率-10MHz信道带宽(SA1,SSP7)
+TCP上行：python performance.py -u U -b 10MHz -s 1 -p 7
+TCP下行：python performance.py  -b 10MHz -s 1 -p 7
+UDP上行：python performance.py -m UDP -u U -b 10MHz -s 1 -p 7
+UDP下行：python performance.py -m UDP  -b 10MHz -s 1 -p 7
+5.24tcp小包测试
+TCP上行：python performance.py -l Y -u U -t 86400
+TCP下行：python performance.py -l Y -t 86400
+6.24udp小包测试
+UDP上行：python performance.py -l Y  -m UDP -u U -t 86400
+UDP下行：python performance.py -l Y  -m UDP -t 86400

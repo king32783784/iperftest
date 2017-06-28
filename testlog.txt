@@ -1,0 +1,12 @@
+2017-06-28 17:39:17,433 - test -INFO - Input args is {'sspframe': '7', 'little': 'Y', 'subframe': '2', 'upload': 'D', 'testtime': '600', 'bandwidth': '10MHz', 'expectrate': '1M', 'mode': 'UDP'} 
+2017-06-28 17:39:17,447 - test -INFO - Xml args is {u'fhost': u'192.168.9.57', u'interval': u'10', u'ftpuser': u'ftpuser', u'log': u'rate.csv', u'downfile': u'1G', u'cport': u'27149', u'uppath': u'F:/TMP/2G', u'serverip': u'192.168.9.79', u'ftppw': u'123', u'downpath': u'F:/TMP/1G', u'ulfile': u'2G', u'chost': u'192.168.9.42', u'csshpw': u'root123', u'iperfpath': u'iperf.exe', u'fsshpw': u'baicells', u'clientip': u'192.168.100.103', u'lsize': u'4m', u'serverpw': u'baicells', u'size': u'1024m'} 
+2017-06-28 17:39:17,450 - test -INFO - clien recive start by thread 16408
+2017-06-28 17:39:17,467 - test -INFO - ------------------------------------------------------------
+2017-06-28 17:39:17,467 - test -INFO - Server listening on UDP port 27111
+2017-06-28 17:39:17,467 - test -INFO - Receiving 1470 byte datagrams
+2017-06-28 17:39:17,467 - test -INFO - UDP buffer size: 63.0 KByte (default)
+2017-06-28 17:39:17,467 - test -INFO - ------------------------------------------------------------
+2017-06-28 17:39:20,887 - test -INFO - [  3] local 192.168.100.103 port 27111 connected with 192.168.9.79 port 36204
+2017-06-28 17:39:37,198 - test -INFO - [ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+2017-06-28 17:39:47,198 - test -INFO - [  3]  0.0-10.0 sec  3.69 MBytes  3.09 Mbits/sec   0.058 ms 4185/ 7961 (53%)
+2017-06-28 17:39:47,198 - test -ERROR - There is have loss in test
